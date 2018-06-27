@@ -7,10 +7,26 @@
   position: absolute;
   bottom: 50px;
   right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: $white;
+    margin: 0;
+
+  }
+
   &:hover {
     overflow: hidden;
     background-image: url("enter-logo.png");
     background-size: cover;
     background-position: center;
+    border: 6px solid $fluo-pink;
+
+    p {
+      display: none;
+    }
   }
+
 }
