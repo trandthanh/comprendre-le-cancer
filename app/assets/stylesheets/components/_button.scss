@@ -1,32 +1,76 @@
-.big-fluopink-circle {
-  height: 90px;
-  width: 90px;
-  background-color: $fluo-pink;
-  border-radius: 50%;
-  border: 0px solid $white;
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// Desktop & Tablet (Landscape)
 
-  p {
-    color: $white;
-    margin: 0;
-
+@media screen and (min-width: 1024px) {
+  .big-fluopink-circle-mobile {
+    display: none;
   }
 
-  &:hover {
-    overflow: hidden;
-    background-image: image-url("enter-logo.png");
-    background-size: cover;
-    background-position: center;
-    border: 6px solid $fluo-pink;
-
+  .big-fluopink-circle {
+    height: 90px;
+    width: 90px;
+    background-color: $fluo-pink;
+    border-radius: 50%;
+    border: 0px solid $white;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     p {
-      display: none;
+      color: $white;
+      margin: 0;
+    }
+    &:hover {
+      overflow: hidden;
+      background-color: $white;
+      background-image: image-url("cds-logo.png");
+      background-size: contain;
+      background-position: center;
+      border: 4px solid $fluo-pink;
+      text-decoration: none !important;
+      p {
+        display: none;
+        text-decoration: none !important;
+      }
     }
   }
+}
 
+
+// Mobile (Portrait)
+
+@media screen and (max-width: 768px) {
+  .big-fluopink-circle {
+    display: none;
+  }
+
+  .big-fluopink-circle-mobile {
+    margin-top: 40px;
+    height: 90px;
+    width: 90px;
+    background-color: $fluo-pink;
+    border-radius: 50%;
+    border: 0px solid $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: $white;
+      margin: 0;
+    }
+    &:hover {
+      overflow: hidden;
+      background-color: $white;
+      background-image: image-url("cds-logo.png");
+      background-size: contain;
+      background-position: center;
+      border: 4px solid $fluo-pink;
+      text-decoration: none !important;
+      p {
+        display: none;
+        text-decoration: none !important;
+      }
+    }
+  }
 }

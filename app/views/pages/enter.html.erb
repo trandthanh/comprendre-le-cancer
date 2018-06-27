@@ -1,39 +1,45 @@
 <div class="enter-wrapper">
-  <h1>Vous êtes</h1>
-  <div class="enter-scroller">
-    <div class='masthead-image' id='master-container'>
-      <div class='content center'>
-        <div id='master'>
-          <div id='master-container-scroller'>
-            <div class='master-container-scroller_item'>
-              une patiente/une patient.
-            </div>
-            <div class='master-container-scroller_item'>
-              un proche.
-            </div>
-            <div class='master-container-scroller_item'>
-              son compagnon/sa compagne.
-            </div>
-            <div class='master-container-scroller_item'>
-              son ami/son amie.
-            </div>
-            <div class='master-container-scroller_item'>
-              une curieuse/un curieux.
-            </div>
-          </div>
-        </div>
-      </div>
+
+  <div class="enter-content">
+    <h1>Vous êtes</h1>
+
+    <div class="enter-scroller">
+      <div class="enter-scroller-item">Une patiente / Un patient</div>
+      <div class="enter-scroller-item">Un proche</div>
+      <div class="enter-scroller-item">Son compagnon / Sa compagne</div>
+      <div class="enter-scroller-item">Son amie / Son ami</div>
+      <div class="enter-scroller-item">Un curieux / Une curieuse</div>
     </div>
+
+    <div class="enter-debug">
+      <h1>
+        en quête d'une réponse ?
+
+        <br>
+        <br>
+
+        Ce site a été crée pour vous.
+      </h1>
+    </div>
+
+    <div class="enter-debug-2 text-center">
+      <h1>
+        en quête d'une réponse ?
+
+        <br>
+        <br>
+
+        Ce site a été crée pour vous.
+      </h1>
+    </div>
+
   </div>
-  <h1>en quête d'une réponse ?</h1>
-
-  <br>
-  <br>
-
-  <h1>Nous avons crée ce site pour vous.</h1>
 
   <%= link_to home_path do %>
-    <div class= "big-fluopink-circle">
+    <div class="big-fluopink-circle">
+      <p>Entrer</p>
+    </div>
+    <div class="big-fluopink-circle-mobile">
       <p>Entrer</p>
     </div>
   <% end %>
